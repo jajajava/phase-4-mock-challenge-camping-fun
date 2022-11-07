@@ -9,7 +9,7 @@ function Home() {
   useEffect(() => {
     fetch("/activities")
       .then((r) => r.json())
-      .then(setActivities);
+      .then(r => setActivities(r));
   }, []);
 
   useEffect(() => {
